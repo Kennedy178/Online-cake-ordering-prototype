@@ -1,0 +1,72 @@
+<RelativeLayout>
+    <!-- Logo & Welcome Message -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/your_logo"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Munene Home Bakers!"
+        android:layout_below="@id/logoImage"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Company Mission -->
+    <TextView
+        android:id="@+id/companyMission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Our mission is to create delicious homemade cakes for every occasion."
+        android:layout_below="@id/welcomeMessage"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Cake Options -->
+    <LinearLayout
+        android:id="@+id/cakeOptionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/companyMission">
+
+        <!-- Vanilla Cake -->
+        <LinearLayout
+            android:id="@+id/vanillaCakeLayout"
+            ... <!-- Set up with ImageView, TextView for price, and onClickListener for adding to cart -->
+        </LinearLayout>
+
+        <!-- Chocolate Cake -->
+        <LinearLayout
+            android:id="@+id/chocolateCakeLayout"
+            ... <!-- Set up with ImageView, TextView for price, and onClickListener for adding to cart -->
+        </LinearLayout>
+
+    <!-- Cart & Checkout Buttons -->
+    <Button
+        android:id="@+id/cartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to Cart"
+        android:layout_below="@id/cakeOptionsLayout"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/checkoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Checkout"
+        android:layout_below="@id/cartButton"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Contact Us Button -->
+    <Button
+        android:id="@+id/contactButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:layout_below="@id/checkoutButton"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
